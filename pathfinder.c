@@ -9,7 +9,7 @@
 
 char *pathfinder(char *input)
 {
-	size_t i = 0, j = 0, k = 0;
+	size_t i = 0, j = 0;
 	char *test_path = _strdup(_getenv("PATH="));
 	char *path_token = strtok(test_path, ":");
 	char *token_array[100];
@@ -33,10 +33,6 @@ char *pathfinder(char *input)
 		if (access(concat_token, F_OK) == 0)
 			return (concat_token);
 	}
-
-	while (token_array[k])
-		free(token_array[k++]);
-
 	free(concat_token);
 
 	return (input);
