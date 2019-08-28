@@ -20,8 +20,9 @@ int childcare(pid_t child_pid, char *exe_token, char **command_array)
 		exe_token = pathfinder(command_array[0]);
 		if (execve(exe_token, command_array, NULL) == -1)
 		{
+/*			error_print();*/
 			perror(exe_token);
-			exit(1);
+			exit(EXIT_FAILURE);
 		}
 	}
 	else if (child_pid > 0)
