@@ -8,11 +8,10 @@
 
 int main(void)
 {	int i, status = 0, count = 0;
-	char *buffer = NULL;
+	char *buffer = NULL, cwd[1024];
 	char *command_token = NULL, *command_array[100], *exe_token = NULL;
 	size_t bufsize = 32;
 	pid_t child_pid;
-	char cwd[1024];
 
 	while (1)
 	{
@@ -48,6 +47,5 @@ int main(void)
 			waitpid(child_pid, &status, WUNTRACED);
 	}
 	free(buffer);
-	buffer = NULL;
 	return (0);
 }
