@@ -12,7 +12,7 @@ int main(void)
 	char *command_token = NULL, *command_array[100], *exe_token = NULL;
 	size_t bufsize = 32;
 	pid_t child_pid;
-	char cwd[PATH_MAX];
+	char cwd[1024];
 
 	while (1)
 	{

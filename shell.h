@@ -6,12 +6,10 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include <string.h>
-#include <limits.h>
 
 extern char **environ;
 
 int _putchar(char c);
-int main(void);
 char *pathfinder(char *input);
 int _strlen(const char *s);
 char *_strcpy(char *dest, char *src);
