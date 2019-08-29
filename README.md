@@ -2,7 +2,7 @@
 In this repo we create a simple shell.
 
 # Motivation
-This is our end of end of semester and second partner project for Holberton School.  Over the last three months we have been learning C basics. In this repo we bring everything we have learned together and create a simple shell.
+This is our end of semester and second partner project for Holberton School.  Over the last three months we have been learning C basics. In this repo we bring everything we have learned together and create a simple shell.
 
 # Environment
 Our Simple Shell is built and tested in Ubuntu 14.04 LTS and compiled with GCC 4.8.4
@@ -34,6 +34,9 @@ Simple Shell files:
 | shell_helpers.c | Contains helper functions: _strlen, _strnpy, _strcat, _strncmp,_strdup |
 | more_shell_helpers.c | Contains more helper functions: _strcmp |
 | built_ins.c | Contains built in functions: _getenv and _printenv |
+| childcare.c | Contains child process function |
+| special_chars.c | Contains functions dealing with exit, env, and cd |
+| man_1_simple_shell | Man Page for Simple Shell |
 
 # Contributers
 * [**Brendan Eliason**](https://github.com/zinczar) - follow on twitter @zinczar<br/>
