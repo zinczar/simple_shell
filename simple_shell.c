@@ -17,9 +17,11 @@ int main(void)
 	while (1)
 	{
 		if (isatty(STDIN_FILENO) == 1)
+		{
 			write(STDIN_FILENO, "ᕙ(⇀‸↼‶)ᕗ  ", 21);
-		getcwd(cwd, sizeof(cwd));
-		print_cwd(cwd);
+			getcwd(cwd, sizeof(cwd));
+			print_cwd(cwd);
+		}
 		if (getline(&buffer, &bufsize, stdin) == EOF)
 		{
 			if (isatty(STDIN_FILENO) == 1)
